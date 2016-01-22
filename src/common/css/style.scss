@@ -2,14 +2,19 @@ p {
   font-size: 14px;
 }
 
-h1 {
+.pageTitle {
   font-size: 26px;
 }
 
-h2 {
-  font-size: 18px;
+.heading {
+  &-typeA {
+    font-size: 18px;
+  }
+  &-typeB {
+    font-size: 16px;
+  }
+  &-typeC {
+    font-size: 14px;
+  }
 }
 
-h3 {
-  font-size: 16px;
-}

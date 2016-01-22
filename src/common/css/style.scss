@@ -27,12 +27,12 @@
 
 .articleDetail {
   &Head {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $color-gray;
     margin-bottom: 30px;
     padding-bottom: 15px;
   }
   &Foot {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $color-gray;
     margin-top: 30px;
     padding-top: 15px;
   }
@@ -45,7 +45,7 @@
 
 .creditUnit {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid $color-gray;
   p {
     font-size: 12px;
   }

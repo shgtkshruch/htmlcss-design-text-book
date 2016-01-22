@@ -1,3 +1,5 @@
+@import 'variables';
+
 body {
   color: #333;
 }
@@ -14,10 +16,12 @@ p {
 .heading {
   &-typeA {
     font-size: 18px;
-    color: #349FA6;
+    color: $color-green;
+    border-bottom: 1px solid $color-green;
   }
   &-typeB {
     font-size: 16px;
+    border-left: 5px solid #E3E4D9;
   }
   &-typeC {
     font-size: 14px;

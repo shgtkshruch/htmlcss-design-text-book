@@ -5,17 +5,20 @@ body {
 
 p {
   font-size: 14px;
+  line-height: (20 / 14);
 }
 
 ul {
   li {
     font-size: 14px;
+    line-height: (20 / 14);
     list-style-type: square;
   }
 }
 
 table {
   font-size: 14px;
+  line-height: (20 / 14);
   border: 1px solid $color-gray;
   border-collapse: collapse;
   width: 100%;

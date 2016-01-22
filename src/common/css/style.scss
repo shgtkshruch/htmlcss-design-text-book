@@ -1,3 +1,7 @@
+body {
+  color: #333;
+}
+
 p {
   font-size: 14px;
 }
@@ -9,6 +13,7 @@ p {
 .heading {
   &-typeA {
     font-size: 18px;
+    color: #349FA6;
   }
   &-typeB {
     font-size: 16px;

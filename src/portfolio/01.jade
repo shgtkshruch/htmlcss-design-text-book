@@ -15,6 +15,17 @@ html(lang="ja")
     p baserCMSのインストールと、Cafe Debutテーマの初期設定を行ったら、あとはあなたのスマートフォンのInstagramで写真を撮っていくだけ。
     p Instagramのおしゃれ写真で、すぐに素敵なカフェサイトが出来上がっちゃうフォトログ風baserCMSテーマです。
 
+    table
+      caption 制作担当
+      - team = []
+      - team[0] = {name: 'コモモ', task: '企画・デザイン・baseCMSテーマのベース組み込み担当'}
+      - team[1] = {name: 'モリコ', task: 'HTML/CSSコーディング担当'}
+      - team[2] = {name: 'ひろましゃ', task: 'プラグイン制作、テーマ実装の難しいところとか担当'}
+      each member, i in team
+        tr
+          th= member.name
+          td= member.task
+
     h3 プラグインでInstagramと連携
     p プラグインでInstagramと連携して、トップページにInstagramで撮影した写真がすぐに反映されます。
 

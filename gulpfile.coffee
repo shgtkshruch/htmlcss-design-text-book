@@ -62,7 +62,7 @@ gulp.task 'jade', ->
       stream: true
 
 gulp.task 'sass', ->
-  gulp.src config.src + '/styles/style.scss'
+  gulp.src config.src + '/common/css/style.scss'
     .pipe $.sass().on 'error', $.sass.logError
     .pipe $.postcss [
       autoprefixer
@@ -72,7 +72,7 @@ gulp.task 'sass', ->
       mqpacker
       fmt
     ]
-    .pipe gulp.dest config.dest + '/styles'
+    .pipe gulp.dest config.dest + '/common/css'
     .pipe browserSync.reload
       stream: true
 
@@ -101,7 +101,7 @@ gulp.task 'publish', ->
 
 gulp.task 'default', ['jade', 'sass', 'coffee', 'image', 'browser-sync'], ->
   gulp.watch config.src + '/**/*.jade', ['jade']
-  gulp.watch config.src + '/styles/*.scss', ['sass']
+  gulp.watch config.src + '/common/css/*.scss', ['sass']
   gulp.watch config.src + '/scripts/*.coffee', ['coffee']
   gulp.watch config.src + '/images/*', ['image']
 

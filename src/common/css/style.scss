@@ -1,12 +1,6 @@
 @import 'variables';
 
-body {
-  color: #333;
-}
-
-p {
-  font-size: 14px;
-}
+@import 'base';
 
 .pageTitle {
   font-size: 26px;
@@ -56,3 +50,4 @@ p {
     font-size: 12px;
   }
 }
+

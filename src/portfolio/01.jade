@@ -5,15 +5,15 @@ html(lang="ja")
     title ページのタイトル
     link(rel='stylesheet', href='../common/css/style.css')
   body
-    article
-      header
+    article.articleDetail
+      header.articleDetailHead
         h1.pageTitle Cafe Debut
         p
           | baser CMS カフェサイト用テーマ
           br
           | baser CMS テーマコンテスト2012 飲食店系テーマ賞受賞（受賞結果はこちら）
 
-      section
+      section.articleDetailBody
         h2.heading-typeA いますぐ、はじめられるカフェサイトテーマ！
         p baserCMSは、「コーポレートサイトにちょうどいい」をキャッチコピーにしたcake PHPベースの国産CMS。Cafe Debutは、baseCMSのテーマコンテスト2012に応募するために、チームこもりこましゃで作成しました。
         p baserCMSのインストールと、Cafe Debutテーマの初期設定を行ったら、あとはあなたのスマートフォンのInstagramで写真を撮っていくだけ。
@@ -42,7 +42,7 @@ html(lang="ja")
           h3.heading-typeB Webフォントだから、飾り文字やアイコンもキレイ
           p サイトのタイトルやナビゲーション、主要な見出しはGoogle Web Font、アイコンはウェブフォント（Fontello）を採用しています。拡大縮小されるスマートフォンやタブレットでも解像度を気にすることなくキレイな文字とアイコン表示を実現できました。
 
-      footer
+      footer.articleDetailFoot
         section
           h2.heading-typeC 関連リンク
           ul
@@ -50,7 +50,7 @@ html(lang="ja")
             each list, i in lists
               li= list
 
-        aside
+        aside.creditUnit
           p 撮影協力
           h2.heading-typeC kitchen nest
           p 北海道札幌市中央区南３条西８丁目　大洋ビル２階

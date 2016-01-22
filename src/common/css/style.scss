@@ -31,3 +31,28 @@ p {
   }
 }
 
+.articleDetail {
+  &Head {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+  }
+  &Foot {
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+    padding-top: 15px;
+  }
+  &Body {
+    section {
+      margin: 30px 0;
+    }
+  }
+}
+
+.creditUnit {
+  padding: 10px;
+  border: 1px solid #ccc;
+  p {
+    font-size: 12px;
+  }
+}

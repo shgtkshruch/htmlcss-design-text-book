@@ -23,3 +23,9 @@ html(lang="ja")
 
     h3 Webフォントだから、飾り文字やアイコンもキレイ
     p サイトのタイトルやナビゲーション、主要な見出しはGoogle Web Font、アイコンはウェブフォント（Fontello）を採用しています。拡大縮小されるスマートフォンやタブレットでも解像度を気にすることなくキレイな文字とアイコン表示を実現できました。
+
+    h2 関連リンク
+    ul
+      - lists = ['Cafe Debutのダウンロードページ', 'Cafe Debutのデモページ', 'baser CMS公式サイト', 'Instagram公式サイト']
+      each list, i in lists
+        li= list

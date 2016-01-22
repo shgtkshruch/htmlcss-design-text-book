@@ -29,7 +29,7 @@ gulp.task 'browser-sync', ->
     browser: 'Google Chrome Canary'
 
 gulp.task 'wiredep', ->
-  gulp.src config.src + '/index.jade'
+  gulp.src config.src + '/**/*.jade'
     .pipe wiredep()
     .pipe gulp.dest config.src
 

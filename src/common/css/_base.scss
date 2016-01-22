@@ -1,6 +1,5 @@
 body {
   color: #333;
-  font-family: sans-serif;
 }
 
 p {
@@ -20,7 +19,6 @@ table {
   font-size: 14px;
   line-height: (20 / 14);
   border: 1px solid $color-gray;
-  border-collapse: collapse;
   width: 100%;
   caption {
     text-align: left;

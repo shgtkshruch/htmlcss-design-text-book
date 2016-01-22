@@ -5,11 +5,12 @@ html(lang="ja")
     title ページのタイトル
   body
     article
-      h1 Cafe Debut
-      p
-        | baser CMS カフェサイト用テーマ
-        br
-        | baser CMS テーマコンテスト2012 飲食店系テーマ賞受賞（受賞結果はこちら）
+      header
+        h1 Cafe Debut
+        p
+          | baser CMS カフェサイト用テーマ
+          br
+          | baser CMS テーマコンテスト2012 飲食店系テーマ賞受賞（受賞結果はこちら）
 
       section
         h2 いますぐ、はじめられるカフェサイトテーマ！
@@ -40,18 +41,20 @@ html(lang="ja")
           h3 Webフォントだから、飾り文字やアイコンもキレイ
           p サイトのタイトルやナビゲーション、主要な見出しはGoogle Web Font、アイコンはウェブフォント（Fontello）を採用しています。拡大縮小されるスマートフォンやタブレットでも解像度を気にすることなくキレイな文字とアイコン表示を実現できました。
 
-      section
-        h2 関連リンク
-        ul
-          - lists = ['Cafe Debutのダウンロードページ', 'Cafe Debutのデモページ', 'baser CMS公式サイト', 'Instagram公式サイト']
-          each list, i in lists
-            li= list
+      footer
+        section
+          h2 関連リンク
+          ul
+            - lists = ['Cafe Debutのダウンロードページ', 'Cafe Debutのデモページ', 'baser CMS公式サイト', 'Instagram公式サイト']
+            each list, i in lists
+              li= list
 
-      aside
-        p 撮影協力
-        h2 kitchen nest
-        p 北海道札幌市中央区南３条西８丁目　大洋ビル２階
-        ul
-          li http://www.nest-kitchen.jp
-          li Facebook ページ
-        p Cafe Debutテーマのイメージ撮影にご協力いただきました。とっても素敵なお店です。
+        aside
+          p 撮影協力
+          h2 kitchen nest
+          p 北海道札幌市中央区南３条西８丁目　大洋ビル２階
+          ul
+            li http://www.nest-kitchen.jp
+            li Facebook ページ
+          p Cafe Debutテーマのイメージ撮影にご協力いただきました。とっても素敵なお店です。
+

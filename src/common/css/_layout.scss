@@ -1,0 +1,23 @@
+#page {
+  width: 980px;
+  margin: 0 auto;
+}
+
+#pageBody {
+  margin-top: 30px;
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+#pageBodyMain {
+  width: 720px;
+  float: left;
+}
+
+#pageBodySub {
+  width: 220px;
+  float: right;
+}

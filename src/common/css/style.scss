@@ -3,19 +3,16 @@
 @import 'variables';
 
 @import 'base';
+@import 'layout';
 @import 'pageHead';
 @import 'pageFood';
-
-#page {
-  width: 980px;
-  margin: 0 auto;
-}
 
 .pageTitle {
   font-size: 26px;
   line-height: (32 / 26);
   background-color: #F2F2E5;
   padding: 5px 15px;
+  margin-top: 0;
 }
 
 .heading {

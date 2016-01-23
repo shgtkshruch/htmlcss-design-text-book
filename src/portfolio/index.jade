@@ -9,4 +9,20 @@ block topicPath
   - paths[1] = {text: 'つくったもの'}
 
 block pageBodyMain
-  h1.pageTitle= current
+  section
+    h1.pageTitle= current
+
+    - articles = []
+    - articles[0] = {h1: 'バッタになりたい魔法使い', text: ['コモモ・ひろましゃ制作のWeb仕掛け絵本', '合い言葉は、バッタになっちゃえ！'], link: '03.html', img: 'index_03.jpg'}
+    - articles[1] = {h1: 'WordPressデザインワークブック', text: ['コモモとひろましゃ二人の共著によるWordPressで本格的なウェブサイトを制作したい方向けの書籍'], link: '02.html', img: 'index_02.jpg'}
+    - articles[2] = {h1: 'Cafe Debut', text: ['baserCMSのカフェサイト用汎用テーマ', 'テーマコンテスト2012飲食店系テーマ賞受賞'], link: '01.html', img: 'index_01.jpg'}
+
+    each article, i in articles
+      article.articleList
+        a(href="#{article.link}")
+          h1= article.h1
+          p
+            each text, j in article.text
+                = text
+                br
+          img(src="images/#{article.img}" alt="" width="300" height="163")

@@ -1,0 +1,24 @@
+#pageBodySub {
+  h2 {
+    font-size: 16px;
+    line-height: (22 / 16);
+    padding: 5px;
+    margin-top: 0;
+    border-bottom: 1px solid $color-gray;
+  }
+  .newsList {
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        font-size: 12px;
+        line-height: (15 / 12);
+        margin: 10px 5px;
+        time {
+          font-weight: bold;
+          display: block;
+        }
+      }
+    }
+  }
+}

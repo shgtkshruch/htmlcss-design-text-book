@@ -1,0 +1,89 @@
+#pageBodyMain {
+  p {
+    font-size: 14px;
+    line-height: (20 / 14);
+  }
+  ul {
+    li {
+      font-size: 14px;
+      line-height: (20 / 14);
+      list-style-type: square;
+    }
+  }
+  table {
+    font-size: 14px;
+    line-height: (20 / 14);
+    border: 1px solid $color-gray;
+    width: 100%;
+    caption {
+      text-align: left;
+      font-weight: bold;
+    }
+    th,
+    td {
+      border: 1px solid $color-gray;
+    }
+    th {
+      background-color: #EEE;
+      text-align: left;
+    }
+  }
+  figure {
+    margin: 0;
+  }
+
+  figcaption {
+    font-size: 12px;
+  }
+  .pageTitle {
+    font-size: 26px;
+    line-height: (32 / 26);
+    background-color: #F2F2E5;
+    padding: 5px 15px;
+    margin-top: 0;
+  }
+  .heading {
+    &-typeA {
+      font-size: 18px;
+      line-height: (24 / 18);
+      color: $color-green;
+      border-bottom: 1px solid $color-green;
+      padding: 5px;
+    }
+    &-typeB {
+      font-size: 16px;
+      line-height: (22 / 16);
+      border-left: 5px solid #E3E4D9;
+      padding-left: 10px;
+    }
+    &-typeC {
+      font-size: 14px;
+      line-height: (20 / 14);
+    }
+  }
+  .articleDetail {
+    &Head {
+      border-bottom: 1px solid $color-gray;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+    }
+    &Foot {
+      border-top: 1px solid $color-gray;
+      margin-top: 30px;
+      padding-top: 15px;
+    }
+    &Body {
+      section {
+        margin: 30px 0;
+      }
+    }
+  }
+  .creditUnit {
+    padding: 10px;
+    border: 1px solid $color-gray;
+    p {
+      font-size: 12px;
+      line-height: (18 / 12);
+    }
+  }
+}

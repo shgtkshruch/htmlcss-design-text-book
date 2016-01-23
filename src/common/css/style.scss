@@ -6,6 +6,11 @@
 @import 'pageHead';
 @import 'pageFood';
 
+#page {
+  width: 980px;
+  margin: 0 auto;
+}
+
 .pageTitle {
   font-size: 26px;
   line-height: (32 / 26);

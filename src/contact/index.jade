@@ -9,4 +9,25 @@ block topicPath
   - paths[1] = {text: 'おといあわせ'}
 
 block pageBodyMain
-  h1.pageTitle= current
+  article.articleDetail
+    h1.pageTitle= current
+
+    p このサイトについてのご意見・ご質問は、おといあわせフォームより受け付けています。
+    p
+      a(href="#") おといあわせフォーム
+
+    p メンバー各自へのおといあわせは、それぞれのブログなどからお願いいたします。
+
+    - members = []
+    - members[0] = {name: 'コモモ（高橋 朋代）', contacts: [{text: 'ブログ ', link: 'http://cat-speak.net', url: 'http://cat-speak.net'}, {text: 'twitter ', link: '@komomoaichi', url: 'https://twitter.com/komomoaichi'}]}
+    - members[1] = {name: 'モリコ（森 智佳子）', contacts: [{text: 'ブログ ', link: 'http://mori-ko.tumblr.com/', url: 'http://mori-ko.tumblr.com/'}, {text: 'twitter ', link: '@mori_ko', url: 'https://twitter.com/mori_ko'}]}
+    - members[2] = {name: 'ひろましゃ（田中 広将）', contacts: [{text: 'ブログ ', link: 'http://another.maple4ever.net/', url: 'http://another.maple4ever.net/'}]}
+
+    each parson, i in members
+      section
+        h2.heading-typeB= parson.name
+        ul
+          each contact, j in parson.contacts
+            li= contact.text
+              a(href="#{contact.url}")= contact.link
+

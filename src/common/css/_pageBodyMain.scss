@@ -116,7 +116,12 @@
       }
     }
   }
-
+  .imageCenter {
+    text-align: center;
+    border-bottom: 1px solid $color-gray;
+    padding-bottom: 30px;
+    margin: 30px 0;
+  }
   .creditUnit {
     padding: 10px;
     border: 1px solid $color-gray;

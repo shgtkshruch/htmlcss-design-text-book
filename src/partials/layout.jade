@@ -1,0 +1,20 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset='UTF-8')
+    title ページのタイトル
+    block stylesheet
+      // build:css /common/css/vendor.css
+      // bower:css
+      link(rel='stylesheet', href='../../bower_components/normalize-css/normalize.css')
+      // endbower
+      // endbuild
+      link(rel='stylesheet', href='/common/css/style.css')
+  body
+    div#page
+      include header
+
+      #pageBody
+        block pageBody
+
+      include footer

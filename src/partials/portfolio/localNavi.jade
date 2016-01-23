@@ -1,0 +1,9 @@
+nav.localNavi
+  ul
+    - links = []
+    - links[0] = {text: 'バッタになりたい魔法使い', url: '03.html'}
+    - links[1] = {text: 'WordPressデザインワークブック', url: '02.html'}
+    - links[2] = {text: 'Cafe Debut', url: '01.html'}
+    each link, i in links
+      li
+        a(href="#{link.url}")= link.text

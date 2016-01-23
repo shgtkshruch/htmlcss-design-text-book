@@ -1,0 +1,14 @@
+header#pageHead
+  h1#siteTitle komorikomasha
+  p#catchcopy 1人じゃできないことも、力を合わせればできる。やってみたいをカタチにする、3人の楽しいものづくり。
+  nav.globalNav
+    ul
+      - navs = []
+      - navs[0] = {text: 'ホーム', url: '/index.html'}
+      - navs[1] = {text: 'わたしたちについて', url: '/about/index.html'}
+      - navs[2] = {text: 'つくったもの', url: '/portfolio/index.html'}
+      - navs[3] = {text: 'おといあわせ', url: '/contact/index.html'}
+      each nav, i in navs
+        li
+          a(href="#{nav.url}")= nav.text
+

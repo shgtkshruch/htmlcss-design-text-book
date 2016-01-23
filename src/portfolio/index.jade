@@ -20,9 +20,11 @@ block pageBodyMain
     each article, i in articles
       article.articleList
         a(href="#{article.link}")
-          h1= article.h1
-          p
-            each text, j in article.text
-                = text
-                br
-          img(src="images/#{article.img}" alt="" width="300" height="163")
+          .articleListText
+            h1= article.h1
+            p
+              each text, j in article.text
+                  = text
+                  br
+          .articleListImage
+            img(src="images/#{article.img}" alt="" width="300" height="163")

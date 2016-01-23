@@ -24,7 +24,9 @@ html(lang="ja")
               p
                 | baser CMS カフェサイト用テーマ
                 br
-                | baser CMS テーマコンテスト2012 飲食店系テーマ賞受賞（受賞結果はこちら）
+                | baser CMS テーマコンテスト2012 飲食店系テーマ賞受賞（
+                a(href="http://contest.basercms.net/") 受賞結果はこちら
+                | ）
 
             section.articleDetailBody
               h2.heading-typeA いますぐ、はじめられるカフェサイトテーマ！
@@ -68,9 +70,15 @@ html(lang="ja")
               section
                 h2.heading-typeC 関連リンク
                 ul
-                  - lists = ['Cafe Debutのダウンロードページ', 'Cafe Debutのデモページ', 'baser CMS公式サイト', 'Instagram公式サイト']
-                  each list, i in lists
-                    li= list
+                  - links = []
+                  - links[0] = {text: 'Cafe Debutのダウンロードページ', url: 'http://basercms.net/themes/archives/14'}
+                  - links[1] = {text: 'Cafe Debutのデモページ', url: 'http://cafedebut.cat-speak.net/'}
+                  - links[2] = {text: 'baser CMS公式サイト', url: 'http://basercms.net/'}
+                  - links[3] = {text: 'Instagram公式サイト', url: 'http://instagram.com/'}
+
+                  each link, i in links
+                    li
+                      a(href="#{link.url}")= link.text
 
               aside.creditUnit
                 p 撮影協力

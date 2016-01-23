@@ -1,0 +1,77 @@
+extends ../partials/portfolio/layout-page
+
+block topicPath
+  - paths = []
+  - paths[0] = {text: 'ホーム', url: '/index.html'}
+  - paths[1] = {text: 'つくったもの', url: '/portfolio/index.html'}
+  - paths[2] = {text: 'WordPressデザインワークブック'}
+
+block detailHeader
+  h1.pageTitle WordPressデザインワークブック
+  img(src="images/img_02_01.jpg" alt="" width="720" height="390")
+  p
+    | WordPressテーマカスタマイズの入門書
+    br
+    a(href="http://www.amazon.co.jp/dp/4881669281") Amazonでのご購入はこちら
+
+block detailBody
+  h2.heading-typeA ウェブ制作のワークフローに沿った実践的な解説書
+  p 「WordPressデザインワークブック」は、コモモとひろましゃのコンビで執筆したWordPressテーマカスタマイズの入門書です。
+  p 2つのサンプルサイトを元に、実際のサイト制作のワークフローに沿って開発環境で作業を進めるところからスタートし、本番サーバへの移行やバックアップの方法まで、クライアントワークで必要になってくる実践的なノウハウを数多く掲載しています。
+
+  table
+    caption 制作担当
+    - team = []
+    - team[0] = {name: 'コモモ', task: 'サンプルサイトのデザイン、HTML/CSSコーディング、WordPressの基本実装'}
+    - team[1] = {name: 'ひろましゃ', task: 'サンプルサイトのWordPress実装のうち、難しそうなPHPプログラム部分担当'}
+    each member, i in team
+      tr
+        th= member.name
+        td
+          = member.task
+          br
+          | 書籍執筆
+  section
+    h3.heading-typeB WordPressの基礎をちゃんと積み上げたい方へ
+    p ウェブデザイナーが実務としてサイト制作を行う際に、「WordPressの設計思想を知って、WordPressを柔軟に使いこなせるようになること」を目標に書きました。
+    p 通り一遍のウェブサイトを作れるようになるだけじゃなくて、もう一歩WordPressへ踏み込み、自分のやりたいことに応用できるようになってもらえたら嬉しいです。
+    figure
+      img(src="images/img_02_02.jpg" alt="" width="720" height="390")
+
+  section
+    h3.heading-typeB ウェブデザイナーの女の子に読んでもらいたい
+    p
+      | 2つのサンプルサイトのうち、ひとつは札幌にある実在のクレープ屋さん「
+      a(href="http://www.ninocrepe.info/") nino
+      | 」のサイトです。
+      br
+      | ウェブデザイナーの女の子に、クレープ食べたいなぁって考えながら読んでもらえたらいいな(^ ^)
+    figure
+      img(src="images/img_02_03.jpg" alt="" width="720" height="390")
+
+block detailFooter
+  section
+    h2.heading-typeC 関連リンク
+    ul
+      - links = []
+      - links[0] = {text: 'Amazon（WordPressデザインワークブック3.4対応）', url: 'http://www.amazon.co.jp/dp/4881669281'}
+      - links[1] = {text: 'WordPressデザインワークブック3.4対応サポートページ', url: 'http://www.sotechsha.co.jp/sp/928/'}
+      - links[2] = {text: 'ソーテック社', url: 'http://www.sotechsha.co.jp/'}
+      - links[3] = {text: 'コモモのまえがき：「WordPress デザインワークブック 3.4対応」を執筆しました！', url: 'http://cat-speak.net/2012/07/05/482/'}
+      - links[4] = {text: 'ひろましゃのあとがき：「WordPress デザインワークブック 3.4対応」を執筆しました！', url: 'http://another.maple4ever.net/archives/1697/'}
+
+      each link, i in links
+        li
+          a(href="#{link.url}")= link.text
+
+  aside.creditUnit
+    p 撮影協力
+    h2.heading-typeC nino
+    p 札幌市豊平区月寒東2条6丁目1-17
+    ul
+      li
+        a(href="http://www.ninocrepe.info/") http://www.ninocrepe.info/
+    p
+      | WordPressデザインワークブックのサンプルサイトとしても登場するクレープ屋さん。
+      br
+      | おからの入ったクレープ生地はふかふかでおいしいよ。

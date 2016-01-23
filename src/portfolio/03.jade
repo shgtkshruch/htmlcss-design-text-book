@@ -1,0 +1,50 @@
+extends ../partials/portfolio/layout-page
+
+block topicPath
+  - paths = []
+  - paths[0] = {text: 'ホーム', url: '/index.html'}
+  - paths[1] = {text: 'つくったもの', url: '/portfolio/index.html'}
+  - paths[2] = {text: 'バッタになりたい魔法使い'}
+
+block detailHeader
+  h1.pageTitle バッタになりたい魔法使い
+  img(src="images/img_03_01.jpg" alt="" width="720" height="390")
+  p
+    | ウェブ仕掛け絵本
+    br
+    a(href="http://pararaehon.com/") バッタになりたい魔法使い
+
+block detailBody
+  h2.heading-typeA 合い言葉は、バッタになっちゃえ！
+  p
+    | 「バッタになりたい魔法使い」は、ライトノベル作家になりたいひろましゃと、イラストレーターになりたいコモモの利害が一致し、手始めに絵本作ってみようかという話になって作りました。
+    br
+    | 合い言葉は、バッタになっちゃえ！・・まぁ、とにかく絵本を読んでみてください(^ ^)
+
+  table
+    caption 制作担当
+    - team = []
+    - team[0] = {name: 'コモモ', task: 'え'}
+    - team[1] = {name: 'ひろましゃ', task: 'おはなし、JavaScriptとか'}
+    each member, i in team
+      tr
+        th= member.name
+        td= member.task
+
+  section
+    h3.heading-typeB パララックス効果を利用したウェブ仕掛け絵本
+    p 絵本の制作にあたって、ひろましゃが、はじめてのJavaScriptに挑戦しました。ブログで作り方を解説していますので、興味のある方は、こちらの記事をご覧ください。
+    figure
+      img(src="images/img_03_02.jpg" alt="" width="720" height="390")
+
+block detailFooter
+  section
+    h2.heading-typeC 関連リンク
+    ul
+      - links = []
+      - links[0] = {text: 'バッタになりたい魔法使い', url: 'http://pararaehon.com/'}
+      - links[1] = {text: 'ひろましゃの記事：canvas と Web 仕掛け絵本', url: 'http://another.maple4ever.net/archives/1805/'}
+
+      each link, i in links
+        li
+          a(href="#{link.url}")= link.text

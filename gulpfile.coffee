@@ -87,11 +87,11 @@ gulp.task 'coffee', ->
       stream: true
 
 gulp.task 'image', ->
-  gulp.src config.src + '/images/*'
+  gulp.src config.src + '/**/*.{jpg,png}'
     .pipe $.imagemin
       progressive: true
       interlaced: true
-    .pipe gulp.dest config.dest + '/images'
+    .pipe gulp.dest config.dest
 
 gulp.task 'clean', ->
   del ['dist/partials', 'dist/scripts/*.js', '!dist/scripts/{main,vendor}.js']

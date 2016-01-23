@@ -14,6 +14,17 @@ html(lang="ja")
     div#page
       include header
 
+      block topicPath
+        - paths = []
+      if paths.length > 1
+        p.topicPath
+          each path, i in paths
+            if i === paths.length - 1
+              = path.text
+            else
+              a(href="#{path.url}")= path.text
+              | &nbsp;&gt;&nbsp;
+
       #pageBody
         block pageBody
 

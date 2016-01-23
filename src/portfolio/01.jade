@@ -1,5 +1,11 @@
 extends ../partials/portfolio/layout-page
 
+block topicPath
+  - paths = []
+  - paths[0] = {text: 'ホーム', url: '/index.html'}
+  - paths[1] = {text: 'つくったもの', url: '/portfolio/index.html'}
+  - paths[2] = {text: 'Cafe Debut'}
+
 block detailHeader
   h1.pageTitle Cafe Debut
   img(src="images/img_01_01.jpg" alt="" width="720" height="390")

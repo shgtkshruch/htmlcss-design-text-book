@@ -3,5 +3,10 @@ extends ../partials/portfolio/layout
 block globalNavi
  - current = 'つくったもの'
 
+block topicPath
+  - paths = []
+  - paths[0] = {text: 'ホーム', url: '/index.html'}
+  - paths[1] = {text: 'つくったもの'}
+
 block pageBodyMain
   h1.pageTitle= current

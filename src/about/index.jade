@@ -1,4 +1,7 @@
 extends ../partials/layout-page
 
+block globalNavi
+ - current = 'わたしたちについて'
+
 block pageBodyMain
-  h1.pageTitle わたしたちについて
+  h1.pageTitle= current

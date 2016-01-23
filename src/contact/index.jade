@@ -1,4 +1,7 @@
 extends ../partials/layout-page
 
+block globalNavi
+ - current = 'おといあわせ'
+
 block pageBodyMain
-  h1.pageTitle おといあわせ
+  h1.pageTitle= current

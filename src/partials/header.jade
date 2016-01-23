@@ -1,7 +1,9 @@
 header#pageHead
   h1#siteTitle komorikomasha
   p#catchcopy 1人じゃできないことも、力を合わせればできる。やってみたいをカタチにする、3人の楽しいものづくり。
-  nav.globalNav
+  block globalNavi
+    - current = 'ホーム'
+  nav.globalNavi
     ul
       - navs = []
       - navs[0] = {text: 'ホーム', url: '/index.html'}
@@ -9,6 +11,10 @@ header#pageHead
       - navs[2] = {text: 'つくったもの', url: '/portfolio/index.html'}
       - navs[3] = {text: 'おといあわせ', url: '/contact/index.html'}
       each nav, i in navs
-        li
-          a(href="#{nav.url}")= nav.text
+        if nav.text === current
+          li.current
+            a(href="#{nav.url}")= nav.text
+        else
+          li
+            a(href="#{nav.url}")= nav.text
 

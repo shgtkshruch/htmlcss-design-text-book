@@ -1,4 +1,7 @@
 extends ../partials/portfolio/layout
 
+block globalNavi
+ - current = 'つくったもの'
+
 block pageBodyMain
-  h1.pageTitle つくったもの
+  h1.pageTitle= current

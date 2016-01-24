@@ -25,4 +25,29 @@
       vertical-align: bottom;
     }
   }
+  .portfolioIndex {
+    margin-top: 40px;
+    &::after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+    article {
+      width: 300px;
+      float: left;
+      margin-left: 40px;
+      &:first-child {
+        margin-left: 0;
+      }
+      h2 {
+        font-size: 18px;
+        margin: 5px 0;
+      }
+      p {
+        margin-top: 0;
+        font-size: 12px;
+        line-height: (18 / 12);
+      }
+    }
+  }
 }

@@ -18,3 +18,19 @@ block pageBody
         | baserCMS2012 テーマコンテスト　飲食店系テーマ賞受賞
     img(src="images/mainVisual_img_01.jpg" alt="" width="980" height="500")
 
+  section.portfolioIndex
+    - works = []
+    - works[0] = {link: '03.html', img: 'index_03.jpg', heading: 'バッタになりたい魔法使い', text: ['コモモ・ひろましゃ制作のWeb仕掛け絵本', '合い言葉は、バッタになっちゃえ！']}
+    - works[1] = {link: '02.html', img: 'index_02.jpg', heading: 'WordPressデザインワークブック', text: ['コモモとひろましゃ二人の共著によるWordPressで本格的なウェブサイトを制作したい方向けの書籍']}
+    - works[2] = {link: '01.html', img: 'index_01.jpg', heading: 'Cafe Debut', text: ['baserCMSのカフェサイト用汎用テーマ', 'テーマコンテスト2012飲食店系テーマ賞受賞']}
+      each work, i in works
+        article
+          a(href="portfolio/#{work.link}")
+            img(src="portfolio/images/#{work.img}" alt="" width="300" height="163")
+          h2
+            a(href="portfolio/#{work.link}")= work.heading
+          p
+            each text, j in work.text
+              = text
+              br
+

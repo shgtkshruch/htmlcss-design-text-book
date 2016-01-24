@@ -34,3 +34,16 @@ block pageBody
               = text
               br
 
+  section.news
+    h1 お知らせ
+    table
+      - news = []
+      - news[0] = {datetime: '2013-10-01', date: '2013年10月1日', text: 'コモモとモリコで、書籍「HTML/CSSの教科書（仮題）」を執筆中です。お楽しみに。'}
+      - news[1] = {datetime: '2013-10-01', date: '2013年10月1日', text: 'コモモ・モリコ・ひろましゃ3人のサイト「komorikomasha」をオープンしました。 3人で制作したウェブサイトやサービス、その他諸々の活動を紹介・お知らせしていく予定です。どうぞよろしくお願いいたします。'}
+      each nw, i in news
+        tr
+          th
+            time(datetime="#{nw.datetime}")= nw.date
+          td= nw.text
+
+

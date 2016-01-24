@@ -10,19 +10,30 @@ block stylesheet
   // build:css /common/css/vendor.css
   // bower:css
   link(rel='stylesheet', href='../bower_components/normalize-css/normalize.css')
+  link(rel='stylesheet', href='../bower_components/bxslider-4/jquery.bxslider.css')
   // endbower
   // endbuild
   link(rel='stylesheet', href='/common/css/style.css')
 
 block pageBody
   section.mainVisual
-    .mainVisualText
-      h1 Cafe Debut
-      p
-        | baserCMS、カフェサイト用テーマ
-        br
-        | baserCMS2012 テーマコンテスト　飲食店系テーマ賞受賞
-    img(src="images/mainVisual_img_01.jpg" alt="" width="980" height="500")
+    ul.bxslider
+      - slides = []
+      - slides[0] = {heading: ['バッタになりたい魔法使い'], text: ['コモモ・ひろましゃ制作のWeb仕掛け絵本', '合い言葉は、バッタになっちゃえ！'], img: 'mainVisual_img_03.jpg'}
+      - slides[1] = {heading: ['WordPress', 'デザインワークブック'], text: ['コモモとひろましゃ二人の共著によるWordPressで本格的なウェブサイトを制作したい方向けの書籍'], img: 'mainVisual_img_02.jpg'}
+      - slides[2] = {heading: ['Cafe Debut'], text: ['baserCMS、カフェサイト用テーマ', 'baserCMS2012 テーマコンテスト　飲食店系テーマ賞受賞'], img: 'mainVisual_img_01.jpg'}
+      each slide, i in slides
+        li
+          .mainVisualText
+            h1
+              each text, j in slide.heading
+                = text
+                br
+            p
+              each text, k in slide.text
+                = text
+                br
+          img(src="images/#{slide.img}" alt="" width="980" height="500")
 
   section.portfolioIndex
     - works = []
@@ -52,4 +63,14 @@ block pageBody
             time(datetime="#{nw.datetime}")= nw.date
           td= nw.text
 
-
+block script
+  // build:js /common/js/vendor.js
+  script(src="../bower_components/jquery/dist/jquery.min.js")
+  script(src="../bower_components/bxslider-4/jquery.bxslider.min.js")
+  // endbuild
+  script.
+    $('.bxslider').bxSlider({
+      auto: true,
+      speed: 1000,
+      pause: 4000,
+    });

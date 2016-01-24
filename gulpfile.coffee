@@ -84,7 +84,7 @@ gulp.task 'coffee', ->
       stream: true
 
 gulp.task 'image', ->
-  gulp.src config.src + '/**/*.{jpg,png}'
+  gulp.src config.src + '/**/*.{jpg,png,gif}'
     .pipe $.imagemin
       progressive: true
       interlaced: true
@@ -100,7 +100,7 @@ gulp.task 'default', ['jade', 'sass', 'coffee', 'image', 'browser-sync'], ->
   gulp.watch config.src + '/**/*.jade', ['jade']
   gulp.watch config.src + '/common/css/*.scss', ['sass']
   gulp.watch config.src + '/scripts/*.coffee', ['coffee']
-  gulp.watch config.src + '/**/*.{jpg,png}', ['image']
+  gulp.watch config.src + '/**/*.{jpg,png,gif}', ['image']
 
 gulp.task 'prebuild', ['html', 'sass', 'coffee', 'image']
 

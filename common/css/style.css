@@ -427,7 +427,7 @@ a:hover {
   margin-bottom: 12px;
   padding-left: 10px;
   list-style-type: none;
-  background-image: url("/common/images/ico_arrow.png");
+  background-image: url("../images/ico_arrow.png");
   background-repeat: no-repeat;
   background-position: 0 8px;
   font-size: 14px;

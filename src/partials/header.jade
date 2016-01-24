@@ -6,10 +6,10 @@ header#pageHead
   nav.globalNavi
     ul
       - navs = []
-      - navs[0] = {text: 'ホーム', url: '/index.html'}
-      - navs[1] = {text: 'わたしたちについて', url: '/about/index.html'}
-      - navs[2] = {text: 'つくったもの', url: '/portfolio/index.html'}
-      - navs[3] = {text: 'おといあわせ', url: '/contact/index.html'}
+      - navs[0] = {text: 'ホーム', url: '/htmlcss-design-textbook/index.html'}
+      - navs[1] = {text: 'わたしたちについて', url: '/htmlcss-design-textbook/about/index.html'}
+      - navs[2] = {text: 'つくったもの', url: '/htmlcss-design-textbook/portfolio/index.html'}
+      - navs[3] = {text: 'おといあわせ', url: '/htmlcss-design-textbook/contact/index.html'}
       each nav, i in navs
         if nav.text === current
           li.current

@@ -7,13 +7,13 @@ block description
   meta(name="description" content="komorikomashaは、コモモ・モリコ・ひろましゃ3人のメンバーが勢いでつくったものや活動を紹介しているサイトです。")
 
 block stylesheet
-  // build:css /common/css/vendor.css
+  // build:css common/css/vendor.css
   // bower:css
   link(rel='stylesheet', href='../bower_components/normalize-css/normalize.css')
   link(rel='stylesheet', href='../bower_components/bxslider-4/jquery.bxslider.css')
   // endbower
   // endbuild
-  link(rel='stylesheet', href='/common/css/style.css')
+  link(rel='stylesheet', href='common/css/style.css')
 
 block pageBody
   section.mainVisual
@@ -64,7 +64,7 @@ block pageBody
           td= nw.text
 
 block script
-  // build:js /common/js/vendor.js
+  // build:js common/js/vendor.js
   script(src="../bower_components/jquery/dist/jquery.min.js")
   script(src="../bower_components/bxslider-4/jquery.bxslider.min.js")
   // endbuild

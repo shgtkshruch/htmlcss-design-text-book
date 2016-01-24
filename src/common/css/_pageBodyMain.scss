@@ -148,9 +148,23 @@
   .creditUnit {
     padding: 10px;
     border: 1px solid $color-gray;
+    &::after {
+      content: '' ;
+      clear: both;
+      display: block;
+    }
+    .creditUnitText {
+      float: right;
+      width: 378px;
+    }
+    .creditUnitMap {
+      float: left;
+      width: 200px;
+    }
     p {
       font-size: 12px;
       line-height: (18 / 12);
+      margin: 0;
     }
   }
 }

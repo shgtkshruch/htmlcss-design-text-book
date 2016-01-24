@@ -1,0 +1,458 @@
+@import url(https://fonts.googleapis.com/css?family=Antic+Didone);
+
+body {
+  color: #333;
+}
+
+a {
+  color: #996;
+}
+
+a:hover {
+  color: #960;
+}
+
+#page {
+  width: 980px;
+  margin: 0 auto;
+}
+
+#pageBody {
+  margin-top: 30px;
+}
+
+#pageBody::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+#pageBodyMain {
+  float: left;
+  width: 720px;
+}
+
+#pageBodySub {
+  float: right;
+  width: 220px;
+}
+
+#pageHead #siteTitle {
+  margin-bottom: 0;
+  font-family: 'Antic Didone', serif;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+#pageHead #catchcopy {
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+#pageHead .globalNavi {
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+#pageHead .globalNavi ul {
+  margin: 0;
+  padding: 0;
+}
+
+#pageHead .globalNavi ul:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+#pageHead .globalNavi ul li {
+  float: left;
+  box-sizing: border-box;
+  width: 245px;
+  padding: 0 10px;
+  list-style: none;
+  text-align: center;
+  border-left: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+#pageHead .globalNavi ul li:first-child {
+  border-left: none;
+}
+
+#pageHead .globalNavi ul li a {
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+#pageHead .globalNavi ul li a:hover {
+  background-color: #f2f2e5;
+}
+
+#pageHead .globalNavi ul li.current a {
+  background-color: #f2f2e5;
+}
+
+.topicPath {
+  font-size: 12px;
+}
+
+#pageBody .mainVisual ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#pageBody .mainVisual ul li {
+  position: relative;
+}
+
+#pageBody .mainVisual .mainVisualText {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  box-sizing: border-box;
+  width: 400px;
+  padding: 15px 25px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#pageBody .mainVisual .mainVisualText h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.23077;
+}
+
+#pageBody .mainVisual .mainVisualText p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+#pageBody .mainVisual img {
+  vertical-align: bottom;
+}
+
+#pageBody .portfolioIndex {
+  margin-top: 40px;
+}
+
+#pageBody .portfolioIndex::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+#pageBody .portfolioIndex article {
+  float: left;
+  width: 300px;
+  margin-left: 40px;
+}
+
+#pageBody .portfolioIndex article:first-child {
+  margin-left: 0;
+}
+
+#pageBody .portfolioIndex article h2 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+#pageBody .portfolioIndex article p {
+  margin-top: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+#pageBody .news {
+  margin-top: 40px;
+}
+
+#pageBody .news table {
+  width: 100%;
+}
+
+#pageBody .news table tr th,
+#pageBody .news table tr td {
+  padding: 10px 0;
+  vertical-align: top;
+  border-bottom: 1px dotted #ccc;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+#pageBody .news table tr th {
+  padding-right: 30px;
+  white-space: nowrap;
+}
+
+#pageBody .news table tr td {
+  width: 100%;
+}
+
+#pageBody .news h1 {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+}
+
+#pageBodyMain p {
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+#pageBodyMain ul li {
+  list-style-type: square;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+#pageBodyMain table {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+#pageBodyMain table caption {
+  text-align: left;
+  font-weight: bold;
+}
+
+#pageBodyMain table th,
+#pageBodyMain table td {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+}
+
+#pageBodyMain table th {
+  text-align: left;
+  background-color: #eee;
+}
+
+#pageBodyMain figure {
+  margin: 0;
+}
+
+#pageBodyMain figcaption {
+  font-size: 12px;
+}
+
+#pageBodyMain .pageTitle {
+  margin-top: 0;
+  padding: 5px 15px;
+  background-color: #f2f2e5;
+  font-size: 26px;
+  line-height: 1.23077;
+}
+
+#pageBodyMain .articleList {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+}
+
+#pageBodyMain .articleList a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+#pageBodyMain .articleList a:hover {
+  opacity: .7;
+}
+
+#pageBodyMain .articleList a::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+#pageBodyMain .articleList a .articleListText {
+  float: right;
+  width: 370px;
+}
+
+#pageBodyMain .articleList a .articleListText h1 {
+  font-size: 26px;
+  line-height: 1.30769;
+}
+
+#pageBodyMain .articleList a .articleListText p {
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+#pageBodyMain .articleList a .articleListImage {
+  float: left;
+  width: 300px;
+}
+
+#pageBodyMain .articleList a .articleListImage img {
+  vertical-align: bottom;
+}
+
+#pageBodyMain .heading-typeA {
+  padding: 5px;
+  color: #349fa6;
+  border-bottom: 1px solid #349fa6;
+  font-size: 18px;
+  line-height: 1.33333;
+}
+
+#pageBodyMain .heading-typeB {
+  padding-left: 10px;
+  border-left: 5px solid #e3e4d9;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+#pageBodyMain .heading-typeC {
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+#pageBodyMain .articleDetailHead {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+#pageBodyMain .articleDetailFoot {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+}
+
+#pageBodyMain .articleDetailBody section {
+  margin: 30px 0;
+}
+
+#pageBodyMain .imageCenter {
+  margin: 30px 0;
+  padding-bottom: 30px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+#pageBodyMain .btn {
+  margin: 30px 0;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px dotted #ccc;
+}
+
+#pageBodyMain .btn a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #058ba9;
+  border-radius: 5px;
+  background-color: #058ba9;
+  background-image: linear-gradient(to bottom, #92cddb, #058ba9);
+  box-shadow: 1px 1px 0 #9ddded inset;
+  text-shadow: 0 -1px 0 #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#pageBodyMain .btn a:hover {
+  opacity: .7;
+}
+
+#pageBodyMain .creditUnit {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#pageBodyMain .creditUnit::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+#pageBodyMain .creditUnit .creditUnitText {
+  float: right;
+  width: 378px;
+}
+
+#pageBodyMain .creditUnit .creditUnitMap {
+  float: left;
+  width: 200px;
+}
+
+#pageBodyMain .creditUnit p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+#pageBodySub h2 {
+  margin-top: 0;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+#pageBodySub .newsList ul {
+  padding: 0;
+  list-style: none;
+}
+
+#pageBodySub .newsList ul li {
+  margin: 10px 5px;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+#pageBodySub .newsList ul li time {
+  display: block;
+  font-weight: bold;
+}
+
+#pageBodySub .localNavi ul {
+  margin: 0 0 30px;
+  padding-left: 0;
+}
+
+#pageBodySub .localNavi ul li {
+  margin-bottom: 12px;
+  padding-left: 10px;
+  list-style-type: none;
+  background-image: url("/common/images/ico_arrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.pagetop {
+  margin-top: 30px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.pagetop a {
+  padding-left: 10px;
+  background-image: url("/common/images/ico_pagetop.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+#pageFoot {
+  margin-top: 15px;
+  border-top: 1px solid #ccc;
+}
+
+#pageFoot #copyright small {
+  font-size: 12px;
+  line-height: 1.5;
+}

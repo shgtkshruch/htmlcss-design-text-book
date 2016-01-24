@@ -442,7 +442,7 @@ a:hover {
 
 .pagetop a {
   padding-left: 10px;
-  background-image: url("/common/images/ico_pagetop.png");
+  background-image: url("../images/ico_pagetop.png");
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
